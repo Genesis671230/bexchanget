@@ -1,0 +1,107 @@
+{
+  "Casa Roble De Roca" : {
+    "image" : "../assets/img/p2p/trader_1.jpg",
+    "orders_percent" : "88%",
+    "orders" : "216 orders, ",
+    "payment_method" : " Advcash",
+    "limits" : "50 - 18 850,00 USD"
+  },
+  "Matango" : {
+    "image" : "../assets/img/p2p/trader_2.jpg",
+    "orders_percent" : "84%",
+    "orders" : "279 orders, ",
+    "payment_method" : " Card to Card",
+    "limits" : "50 - 10 769,00 USD"
+  },
+  "HoldBit" : {
+    "image" : "../assets/img/p2p/trader_3.jpg",
+    "orders_percent" : "92%",
+    "orders" : "275 orders, ",
+    "payment_method" : " MasterCard",
+    "limits" : "50 - 24 541,00 USD"
+  },
+  "ABEJORRO78" : {
+    "image" : "../assets/img/p2p/trader_4.jpg",
+    "orders_percent" : "99%",
+    "orders" : "188 orders, ",
+    "payment_method" : " Sim-card balance",
+    "limits" : "50 - 23 994,00 USD"
+  },
+  "Ccorrea" : {
+    "image" : "../assets/img/p2p/trader_5.jpg",
+    "orders_percent" : "96%",
+    "orders" : "454 orders, ",
+    "payment_method" : " Webmoney",
+    "limits" : "50 - 62 311,00 USD"
+  },
+  "carloseli777" : {
+    "image" : "../assets/img/p2p/trader_6.jpg",
+    "orders_percent" : "84%",
+    "orders" : "534 orders, ",
+    "payment_method" : " Card to Card",
+    "limits" : "50 - 7 290,00 USD"
+  },
+  "ZproCoin" : {
+    "image" : "../assets/img/p2p/trader_7.jpg",
+    "orders_percent" : "91%",
+    "orders" : "593 orders, ",
+    "payment_method" : " Webmoney",
+    "limits" : "50 - 14 310,00 USD"
+  },
+  "Efinanzas" : {
+    "image" : "../assets/img/p2p/trader_8.jpg",
+    "orders_percent" : "92%",
+    "orders" : "137 orders, ",
+    "payment_method" : " Card to Card",
+    "limits" : "50 - 20 708,00 USD"
+  },
+  "alfredoagrel ⭐️a✳️®️" : {
+    "image" : "../assets/img/p2p/trader_9.jpg",
+    "orders_percent" : "92%",
+    "orders" : "391 orders, ",
+    "payment_method" : " Webmoney",
+    "limits" : "50 - 25 701,00 USD"
+  },
+  "Xaviercripto" : {
+    "image" : "../assets/img/p2p/trader_10.jpg",
+    "orders_percent" : "94%",
+    "orders" : "97 orders, ",
+    "payment_method" : " PokerStars",
+    "limits" : "50 - 15 909,00 USD"
+  },
+  "trader_pk786" : {
+    "image" : "../assets/img/p2p/trader_11.jpg",
+    "orders_percent" : "89%",
+    "orders" : "468 orders, ",
+    "payment_method" : " Sim-card balance",
+    "limits" : "50 - 4 680,00 USD"
+  },
+  "ECU-CAMBIOS" : {
+    "image" : "../assets/img/p2p/trader_12.jpg",
+    "orders_percent" : "89%",
+    "orders" : "280 orders, ",
+    "payment_method" : " Advcash",
+    "limits" : "50 - 19 312,00 USD"
+  },
+  "ActiTecFAST" : {
+    "image" : "../assets/img/p2p/trader_13.jpg",
+    "orders_percent" : "98%",
+    "orders" : "137 orders, ",
+    "payment_method" : " Payeer",
+    "limits" : "50 - 3 445,00 USD"
+  },
+  "afcrypto" : {
+    "image" : "../assets/img/p2p/trader_14.jpg",
+    "orders_percent" : "94%",
+    "orders" : "89 orders, ",
+    "payment_method" : " Advcash",
+    "limits" : "50 - 3 239,00 USD"
+  },
+  "CambiosP" : {
+    "image" : "../assets/img/p2p/trader_15.jpg",
+    "orders_percent" : "97%",
+    "orders" : "628 orders, ",
+    "payment_method" : " MasterCard",
+    "limits" : "50 - 28 200,00 USD"
+  }
+}

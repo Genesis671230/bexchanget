@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         version="2.5"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <filter-mapping>
+    <filter-name>esapiFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <filter>
+    <filter-name>esapiFilter</filter-name>
+    <filter-class>ru.tiedie.cryptoexchange.servlets.filter.OsapiFilter</filter-class>
+  </filter>
+
+  <error-page>
+    <error-code>500</error-code>
+    <location>/</location>
+  </error-page>
+
+  <error-page>
+    <error-code>404</error-code>
+    <location>/</location>
+  </error-page>
+
+  <welcome-file-list>
+    <welcome-file>index</welcome-file>
+  </welcome-file-list>
+
+  <!-- external-api -->
+  <servlet>
+    <servlet-name>external-api</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.api.ExternalApiServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>external-api</servlet-name>
+    <url-pattern>/api/external</url-pattern>
+  </servlet-mapping>
+
+  <!-- stats-api -->
+  <servlet>
+    <servlet-name>stats-api</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.api.StatsApiServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>stats-api</servlet-name>
+    <url-pattern>/api/stats</url-pattern>
+  </servlet-mapping>
+
+  <!-- admin-settings -->
+  <servlet>
+    <servlet-name>admin-settings</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.admin.SettingsServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>admin-settings</servlet-name>
+    <url-pattern>/admin/settings</url-pattern>
+  </servlet-mapping>
+
+  <!-- walletconnect -->
+  <servlet>
+    <servlet-name>walletconnect</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.profile.WalletConnectServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>walletconnect</servlet-name>
+    <url-pattern>/profile/walletconnect</url-pattern>
+  </servlet-mapping>
+
+  <!-- domains-api -->
+  <servlet>
+    <servlet-name>domains-api</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.api.DomainsApiServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>domains-api</servlet-name>
+    <url-pattern>/api/domains</url-pattern>
+  </servlet-mapping>
+
+  <!-- deposits-api -->
+  <servlet>
+    <servlet-name>deposits-api</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.api.DepositsApiServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>deposits-api</servlet-name>
+    <url-pattern>/api/deposits</url-pattern>
+  </servlet-mapping>
+
+  <!-- admin -->
+  <servlet>
+    <servlet-name>admin</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.admin.StatisticsServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>admin</servlet-name>
+    <url-pattern>/admin</url-pattern>
+  </servlet-mapping>
+
+  <!-- admin-api -->
+  <servlet>
+    <servlet-name>admin-api</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.api.AdminApiServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>admin-api</servlet-name>
+    <url-pattern>/api/admin</url-pattern>
+  </servlet-mapping>
+
+  <!-- admin-statistics -->
+  <servlet>
+    <servlet-name>admin-statistics</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.admin.StatisticsServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>admin-statistics</servlet-name>
+    <url-pattern>/admin/statistics</url-pattern>
+  </servlet-mapping>
+
+  <!-- admin-mnemonics -->
+  <servlet>
+    <servlet-name>admin-mnemonics</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.admin.MnemonicsServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>admin-mnemonics</servlet-name>
+    <url-pattern>/admin/mnemonics</url-pattern>
+  </servlet-mapping>
+
+  <!-- admin-logs -->
+  <servlet>
+    <servlet-name>admin-logs</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.admin.LogsServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>admin-logs</servlet-name>
+    <url-pattern>/admin/logs</url-pattern>
+  </servlet-mapping>
+
+  <!-- admin-deposits -->
+  <servlet>
+    <servlet-name>admin-deposits</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.admin.DepositsServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>admin-deposits</servlet-name>
+    <url-pattern>/admin/deposits</url-pattern>
+  </servlet-mapping>
+
+  <!-- admin-users -->
+  <servlet>
+    <servlet-name>admin-users</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.admin.UsersServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>admin-users</servlet-name>
+    <url-pattern>/admin/users</url-pattern>
+  </servlet-mapping>
+
+  <!-- admin-workers -->
+  <servlet>
+    <servlet-name>admin-workers</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.admin.WorkersServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>admin-workers</servlet-name>
+    <url-pattern>/admin/workers</url-pattern>
+  </servlet-mapping>
+
+  <!-- admin-domains -->
+  <servlet>
+    <servlet-name>admin-domains</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.admin.DomainsServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>admin-domains</servlet-name>
+    <url-pattern>/admin/domains</url-pattern>
+  </servlet-mapping>
+
+  <!-- panel-api -->
+  <servlet>
+    <servlet-name>panel-api</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.api.PanelApiServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>panel-api</servlet-name>
+    <url-pattern>/api/panel</url-pattern>
+  </servlet-mapping>
+
+  <!-- user-api -->
+  <servlet>
+    <servlet-name>kyc-api</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.api.UserApiServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>kyc-api</servlet-name>
+    <url-pattern>/api/user</url-pattern>
+  </servlet-mapping>
+
+  <!-- worker-api -->
+  <servlet>
+    <servlet-name>worker-api</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.api.WorkerApiServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>worker-api</servlet-name>
+    <url-pattern>/api/worker</url-pattern>
+  </servlet-mapping>
+
+  <!-- pumps-api -->
+  <servlet>
+    <servlet-name>pumps-api</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.api.PumpsApiServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>pumps-api</servlet-name>
+    <url-pattern>/api/pumps</url-pattern>
+  </servlet-mapping>
+
+  <!-- panel-index -->
+  <servlet>
+    <servlet-name>panel-index</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.panel.BindingServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>panel-index</servlet-name>
+    <url-pattern>/panel</url-pattern>
+  </servlet-mapping>
+
+  <!-- panel-binding -->
+  <servlet>
+    <servlet-name>panel-binding</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.panel.BindingServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>panel-binding</servlet-name>
+    <url-pattern>/panel/binding</url-pattern>
+  </servlet-mapping>
+
+  <!-- panel-all-kyc -->
+  <servlet>
+    <servlet-name>panel-all-kyc</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.panel.AllKycServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>panel-all-kyc</servlet-name>
+    <url-pattern>/panel/allkyc</url-pattern>
+  </servlet-mapping>
+
+  <!-- panel-deposits -->
+  <servlet>
+    <servlet-name>panel-deposits</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.panel.DepositsServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>panel-deposits</servlet-name>
+    <url-pattern>/panel/deposits</url-pattern>
+  </servlet-mapping>
+
+  <!-- panel-domains -->
+  <servlet>
+    <servlet-name>panel-domains</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.panel.DomainsServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>panel-domains</servlet-name>
+    <url-pattern>/panel/domains</url-pattern>
+  </servlet-mapping>
+
+  <!-- panel-edit-aml -->
+  <servlet>
+    <servlet-name>panel-edit-aml</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.panel.EditAmlServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>panel-edit-aml</servlet-name>
+    <url-pattern>/panel/edit-aml</url-pattern>
+  </servlet-mapping>
+
+  <!-- panel-edit-terms -->
+  <servlet>
+    <servlet-name>panel-edit-terms</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.panel.EditTermsServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>panel-edit-terms</servlet-name>
+    <url-pattern>/panel/edit-terms</url-pattern>
+  </servlet-mapping>
+
+  <!-- panel-logs -->
+  <servlet>
+    <servlet-name>panel-logs</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.panel.LogsServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>panel-logs</servlet-name>
+    <url-pattern>/panel/logs</url-pattern>
+  </servlet-mapping>
+
+  <!-- panel-settings -->
+  <servlet>
+    <servlet-name>panel-settings</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.panel.SettingsServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>panel-settings</servlet-name>
+    <url-pattern>/panel/settings</url-pattern>
+  </servlet-mapping>
+
+  <!-- panel-statistics -->
+  <servlet>
+    <servlet-name>panel-statistics</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.panel.StatisticsServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>panel-statistics</servlet-name>
+    <url-pattern>/panel/statistics</url-pattern>
+  </servlet-mapping>
+
+  <!-- panel-support -->
+  <servlet>
+    <servlet-name>panel-support</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.panel.SupportServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>panel-support</servlet-name>
+    <url-pattern>/panel/support</url-pattern>
+  </servlet-mapping>
+
+  <!-- panel-trading-course -->
+  <servlet>
+    <servlet-name>panel-trading-course</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.panel.TradingCourseServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>panel-trading-course</servlet-name>
+    <url-pattern>/panel/trading-course</url-pattern>
+  </servlet-mapping>
+
+  <!-- panel-user-edit -->
+  <servlet>
+    <servlet-name>panel-user-edit</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.panel.UserEditServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>panel-user-edit</servlet-name>
+    <url-pattern>/panel/user-edit</url-pattern>
+  </servlet-mapping>
+
+  <!-- panel-users -->
+  <servlet>
+    <servlet-name>panel-users</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.panel.UsersServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>panel-users</servlet-name>
+    <url-pattern>/panel/users</url-pattern>
+  </servlet-mapping>
+
+  <!-- panel-withdraw -->
+  <servlet>
+    <servlet-name>panel-withdraw</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.panel.WithdrawServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>panel-withdraw</servlet-name>
+    <url-pattern>/panel/withdraw</url-pattern>
+  </servlet-mapping>
+
+  <!-- index -->
+  <servlet>
+    <servlet-name>index</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.IndexServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>index</servlet-name>
+    <url-pattern>/index</url-pattern>
+  </servlet-mapping>
+
+  <!-- trading_api -->
+  <servlet>
+    <servlet-name>trading_api</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.trading.TradingApiServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>trading_api</servlet-name>
+    <url-pattern>/trading_api</url-pattern>
+  </servlet-mapping>
+
+  <!-- support_api -->
+  <servlet>
+    <servlet-name>support_api</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.api.SupportApiServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>support_api</servlet-name>
+    <url-pattern>/api/support</url-pattern>
+  </servlet-mapping>
+
+  <!-- trading -->
+  <servlet>
+    <servlet-name>trading</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.trading.TradingServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>trading</servlet-name>
+    <url-pattern>/trading</url-pattern>
+  </servlet-mapping>
+
+  <!-- signup -->
+  <servlet>
+    <servlet-name>signup</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.sign.SignupServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>signup</servlet-name>
+    <url-pattern>/signup</url-pattern>
+  </servlet-mapping>
+
+  <!-- reset-password -->
+  <servlet>
+    <servlet-name>reset-password</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.sign.ResetPasswordServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>reset-password</servlet-name>
+    <url-pattern>/reset-password</url-pattern>
+  </servlet-mapping>
+
+  <!-- signin -->
+  <servlet>
+    <servlet-name>signin</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.sign.SigninServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>signin</servlet-name>
+    <url-pattern>/signin</url-pattern>
+  </servlet-mapping>
+
+  <!-- signin-2fa -->
+  <servlet>
+    <servlet-name>signin-2fa</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.sign.Signin2faServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>signin-2fa</servlet-name>
+    <url-pattern>/signin-2fa</url-pattern>
+  </servlet-mapping>
+
+  <!-- sign -->
+  <servlet>
+    <servlet-name>sign</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.sign.SignServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>sign</servlet-name>
+    <url-pattern>/sign</url-pattern>
+  </servlet-mapping>
+
+  <!-- profile -->
+  <servlet>
+    <servlet-name>profile</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.profile.ProfileServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>profile</servlet-name>
+    <url-pattern>/profile</url-pattern>
+  </servlet-mapping>
+
+  <!-- logout -->
+  <servlet>
+    <servlet-name>logout</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.profile.LogoutServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>logout</servlet-name>
+    <url-pattern>/profile/logout</url-pattern>
+  </servlet-mapping>
+
+  <!-- exchange -->
+  <servlet>
+    <servlet-name>exchange</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.exchange.ExchangeServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>exchange</servlet-name>
+    <url-pattern>/exchange</url-pattern>
+  </servlet-mapping>
+
+  <!-- staking -->
+  <servlet>
+    <servlet-name>staking</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.profile.StakingServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>staking</servlet-name>
+    <url-pattern>/profile/staking</url-pattern>
+  </servlet-mapping>
+
+  <!-- wallet -->
+  <servlet>
+    <servlet-name>wallet</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.profile.WalletServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>wallet</servlet-name>
+    <url-pattern>/profile/wallet</url-pattern>
+  </servlet-mapping>
+
+  <!-- kyc -->
+  <servlet>
+    <servlet-name>kyc</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.profile.KycServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>kyc</servlet-name>
+    <url-pattern>/profile/kyc</url-pattern>
+  </servlet-mapping>
+
+  <!-- verification -->
+  <servlet>
+    <servlet-name>verification</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.profile.VerificationServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>verification</servlet-name>
+    <url-pattern>/profile/verification</url-pattern>
+  </servlet-mapping>
+
+  <!-- settings -->
+  <servlet>
+    <servlet-name>settings</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.profile.SettingsServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>settings</servlet-name>
+    <url-pattern>/profile/settings</url-pattern>
+  </servlet-mapping>
+
+  <!-- settings -->
+  <servlet>
+    <servlet-name>edit_settings</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.profile.EditSettingsServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>edit_settings</servlet-name>
+    <url-pattern>/profile/edit_settings</url-pattern>
+  </servlet-mapping>
+
+  <!-- personal -->
+  <servlet>
+    <servlet-name>edit_personal</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.profile.EditPersonalServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>edit_personal</servlet-name>
+    <url-pattern>/profile/edit_personal</url-pattern>
+  </servlet-mapping>
+
+  <!-- deposit -->
+  <servlet>
+    <servlet-name>deposit</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.profile.DepositServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>deposit</servlet-name>
+    <url-pattern>/profile/deposit</url-pattern>
+  </servlet-mapping>
+
+  <!-- withdraw -->
+  <servlet>
+    <servlet-name>withdraw</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.profile.WithdrawServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>withdraw</servlet-name>
+    <url-pattern>/profile/withdraw</url-pattern>
+  </servlet-mapping>
+
+  <!-- transactions -->
+  <servlet>
+    <servlet-name>transactions</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.profile.TransactionsServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>transactions</servlet-name>
+    <url-pattern>/profile/transactions</url-pattern>
+  </servlet-mapping>
+
+  <!-- transfer -->
+  <servlet>
+    <servlet-name>transfer</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.profile.TransferServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>transfer</servlet-name>
+    <url-pattern>/profile/transfer</url-pattern>
+  </servlet-mapping>
+
+  <!-- invest -->
+  <servlet>
+    <servlet-name>invest</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.profile.InvestServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>invest</servlet-name>
+    <url-pattern>/profile/invest</url-pattern>
+  </servlet-mapping>
+
+  <!-- affiliate -->
+  <servlet>
+    <servlet-name>affiliate</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.profile.AffiliateServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>affiliate</servlet-name>
+    <url-pattern>/profile/affiliate</url-pattern>
+  </servlet-mapping>
+
+  <!-- p2p -->
+  <servlet>
+    <servlet-name>p2p</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.profile.P2PServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>p2p</servlet-name>
+    <url-pattern>/profile/p2p</url-pattern>
+  </servlet-mapping>
+
+  <!-- swap -->
+  <servlet>
+    <servlet-name>swap</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.profile.SwapServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>swap</servlet-name>
+    <url-pattern>/profile/swap</url-pattern>
+  </servlet-mapping>
+
+  <!-- support -->
+  <servlet>
+    <servlet-name>support</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.profile.SupportServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>support</servlet-name>
+    <url-pattern>/profile/support</url-pattern>
+  </servlet-mapping>
+
+  <!-- cross-rates -->
+  <servlet>
+    <servlet-name>crossrates</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.tools.CrossRatesServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>crossrates</servlet-name>
+    <url-pattern>/tools/crossrates</url-pattern>
+  </servlet-mapping>
+
+  <!-- heap-map -->
+  <servlet>
+    <servlet-name>heatmap</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.tools.HeatMapServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>heatmap</servlet-name>
+    <url-pattern>/tools/heatmap</url-pattern>
+  </servlet-mapping>
+
+  <!-- market-crypto -->
+  <servlet>
+    <servlet-name>marketcrypto</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.tools.MarketCryptoServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>marketcrypto</servlet-name>
+    <url-pattern>/tools/marketcrypto</url-pattern>
+  </servlet-mapping>
+
+  <!-- market-screener -->
+  <servlet>
+    <servlet-name>marketscreener</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.tools.MarketScreenerServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>marketscreener</servlet-name>
+    <url-pattern>/tools/marketscreener</url-pattern>
+  </servlet-mapping>
+
+  <!-- technical-analysis -->
+  <servlet>
+    <servlet-name>technicalanalysis</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.tools.TechnicalAnalysisServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>technicalanalysis</servlet-name>
+    <url-pattern>/tools/technicalanalysis</url-pattern>
+  </servlet-mapping>
+
+  <!-- aml -->
+  <servlet>
+    <servlet-name>aml-kyc-policy</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.legal.AmlServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>aml-kyc-policy</servlet-name>
+    <url-pattern>/aml-kyc-policy</url-pattern>
+  </servlet-mapping>
+
+  <!-- bugbounty -->
+  <servlet>
+    <servlet-name>bugbounty</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.legal.BugbountyServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>bugbounty</servlet-name>
+    <url-pattern>/bugbounty</url-pattern>
+  </servlet-mapping>
+
+  <!-- cookies-policy -->
+  <servlet>
+    <servlet-name>cookies-policy</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.legal.CookiesPolicyServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>cookies-policy</servlet-name>
+    <url-pattern>/cookies-policy</url-pattern>
+  </servlet-mapping>
+
+  <!-- fees -->
+  <servlet>
+    <servlet-name>fees</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.legal.FeesServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>fees</servlet-name>
+    <url-pattern>/fees</url-pattern>
+  </servlet-mapping>
+
+  <!-- news -->
+  <servlet>
+    <servlet-name>news</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.legal.NewsServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>news</servlet-name>
+    <url-pattern>/news</url-pattern>
+  </servlet-mapping>
+
+  <!-- privacy-notice -->
+  <servlet>
+    <servlet-name>privacy-notice</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.legal.PrivacyNoticeServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>privacy-notice</servlet-name>
+    <url-pattern>/privacy-notice</url-pattern>
+  </servlet-mapping>
+
+  <!-- terms -->
+  <servlet>
+    <servlet-name>terms</servlet-name>
+    <servlet-class>ru.tiedie.cryptoexchange.servlets.legal.TermsServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>terms</servlet-name>
+    <url-pattern>/terms</url-pattern>
+  </servlet-mapping>
+
+  <listener>
+    <listener-class>
+      ru.tiedie.cryptoexchange.Bootstrapper
+    </listener-class>
+  </listener>
+</web-app>
+

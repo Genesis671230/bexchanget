@@ -1,0 +1,1 @@
+<html><script async="false" type="text/javascript" src="chrome-extension://fnjhmkhhmkbjkkabndcnnogagogbneec/in-page.js"></script><head></head><body><div style="background: #b93c3c; height: 40px; color: white; text-align: center; font-size: 20px; padding-top: 15px;">You have been banned</div></body></html>

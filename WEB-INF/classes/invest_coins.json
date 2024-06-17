@@ -1,0 +1,67 @@
+{
+  "BTC" : {
+    "symbol" : "BTC",
+    "name" : "Bitcoin",
+    "image" : "../assets/img/cryptoicons/btc.svg"
+  },
+  "BCH" : {
+    "symbol" : "BCH",
+    "name" : "Bitcoin Cash",
+    "image" : "../assets/img/cryptoicons/bch.svg"
+  },
+  "ETH" : {
+    "symbol" : "ETH",
+    "name" : "Ethereum",
+    "image" : "../assets/img/cryptoicons/eth.svg"
+  },
+  "ETC" : {
+    "symbol" : "ETC",
+    "name" : "Ethereum Classic",
+    "image" : "../assets/img/cryptoicons/etc.svg"
+  },
+  "LTC" : {
+    "symbol" : "LTC",
+    "name" : "Litecoin",
+    "image" : "../assets/img/cryptoicons/ltc.svg"
+  },
+  "SOL" : {
+    "symbol" : "SOL",
+    "name" : "SOL",
+    "image" : "../assets/img/cryptoicons/sol.svg"
+  },
+  "XRP" : {
+    "symbol" : "XRP",
+    "name" : "Ripple",
+    "image" : "../assets/img/cryptoicons/xrp.svg"
+  },
+  "XMR" : {
+    "symbol" : "XMR",
+    "name" : "Monero",
+    "image" : "../assets/img/cryptoicons/xmr.svg"
+  },
+  "DOGE" : {
+    "symbol" : "DOGE",
+    "name" : "Dogecoin",
+    "image" : "../assets/img/cryptoicons/doge.svg"
+  },
+  "DASH" : {
+    "symbol" : "DASH",
+    "name" : "Dash",
+    "image" : "../assets/img/cryptoicons/dash.svg"
+  },
+  "TRX" : {
+    "symbol" : "TRX",
+    "name" : "Tron",
+    "image" : "../assets/img/cryptoicons/trx.svg"
+  },
+  "MATIC" : {
+    "symbol" : "MATIC",
+    "name" : "MATIC",
+    "image" : "../assets/img/cryptoicons/matic.svg"
+  },
+  "ADA" : {
+    "symbol" : "ADA",
+    "name" : "Cardano",
+    "image" : "../assets/img/cryptoicons/ada.svg"
+  }
+}

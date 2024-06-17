@@ -1,0 +1,625 @@
+{
+  "BTC" : {
+    "image" : "../assets/img/cryptoicons/btc.svg",
+    "symbol" : "BTC",
+    "title" : "Bitcoin",
+    "gas_fee" : "0.000045",
+    "mnemo" : false
+  },
+  "ETH" : {
+    "image" : "../assets/img/cryptoicons/eth.svg",
+    "symbol" : "ETH",
+    "title" : "Ethereum",
+    "gas_fee" : "0.000637",
+    "mnemo" : false
+  },
+  "LTC" : {
+    "image" : "../assets/img/cryptoicons/ltc.svg",
+    "symbol" : "LTC",
+    "title" : "Litecoin",
+    "gas_fee" : "0.011403",
+    "mnemo" : false
+  },
+  "USDT_ERC_20" : {
+    "image" : "../assets/img/cryptoicons/usdt.svg",
+    "symbol" : "USDT",
+    "title" : "USDT ERC-20",
+    "gas_fee" : "1",
+    "mnemo" : false
+  },
+  "USDT_BEP_20" : {
+    "image" : "../assets/img/cryptoicons/usdt.svg",
+    "symbol" : "USDT",
+    "title" : "USDT BEP-20",
+    "gas_fee" : "1",
+    "mnemo" : false
+  },
+  "USDT_TRC_20" : {
+    "image" : "../assets/img/cryptoicons/usdt.svg",
+    "symbol" : "USDT",
+    "title" : "USDT TRC-20",
+    "gas_fee" : "1",
+    "mnemo" : false
+  },
+  "TRX" : {
+    "image" : "../assets/img/cryptoicons/trx.svg",
+    "symbol" : "TRX",
+    "title" : "Tron",
+    "gas_fee" : "14.89",
+    "mnemo" : false
+  },
+  "BNB" : {
+    "image" : "../assets/img/cryptoicons/bnb.svg",
+    "symbol" : "BNB",
+    "title" : "BNB BEP-2",
+    "gas_fee" : "0.003499",
+    "mnemo" : true
+  },
+  "BCH" : {
+    "image" : "../assets/img/cryptoicons/bch.svg",
+    "symbol" : "BCH",
+    "title" : "Bitcoin Cash",
+    "gas_fee" : "0.008032",
+    "mnemo" : false
+  },
+  "DOGE" : {
+    "image" : "../assets/img/cryptoicons/doge.svg",
+    "symbol" : "DOGE",
+    "title" : "Dogecoin",
+    "gas_fee" : "13.37",
+    "mnemo" : false
+  },
+  "XMR" : {
+    "image" : "../assets/img/cryptoicons/xmr.svg",
+    "symbol" : "XMR",
+    "title" : "Monero",
+    "gas_fee" : "0.006631",
+    "mnemo" : false
+  },
+  "XLM" : {
+    "image" : "../assets/img/cryptoicons/xlm.svg",
+    "symbol" : "XLM",
+    "title" : "Stellar",
+    "gas_fee" : "12.20",
+    "mnemo" : true
+  },
+  "XTZ" : {
+    "image" : "../assets/img/cryptoicons/xtz.svg",
+    "symbol" : "XTZ",
+    "title" : "Tezos",
+    "gas_fee" : "0.884956",
+    "mnemo" : false
+  },
+  "EOS" : {
+    "image" : "../assets/img/cryptoicons/eos.svg",
+    "symbol" : "EOS",
+    "title" : "EOS",
+    "gas_fee" : "0.847458",
+    "mnemo" : true
+  },
+  "SHIB" : {
+    "image" : "../assets/img/cryptoicons/shib.svg",
+    "symbol" : "SHIB",
+    "title" : "SHIBA INU BEP-20",
+    "gas_fee" : "100000.00",
+    "mnemo" : false
+  },
+  "LINK" : {
+    "image" : "../assets/img/cryptoicons/link.svg",
+    "symbol" : "LINK",
+    "title" : "Chainlink ERC-20",
+    "gas_fee" : "0.145138",
+    "mnemo" : false
+  },
+  "ETC" : {
+    "image" : "../assets/img/cryptoicons/etc.svg",
+    "symbol" : "ETC",
+    "title" : "Ethereum Classic",
+    "gas_fee" : "0.051203",
+    "mnemo" : false
+  },
+  "XRP" : {
+    "image" : "../assets/img/cryptoicons/xrp.svg",
+    "symbol" : "XRP",
+    "title" : "Ripple",
+    "gas_fee" : "2.69",
+    "mnemo" : true
+  },
+  "ADA" : {
+    "image" : "../assets/img/cryptoicons/ada.svg",
+    "symbol" : "ADA",
+    "title" : "Cardano",
+    "gas_fee" : "3.02",
+    "mnemo" : false
+  },
+  "DASH" : {
+    "image" : "../assets/img/cryptoicons/dash.svg",
+    "symbol" : "DASH",
+    "title" : "Dash",
+    "gas_fee" : "0.015974",
+    "mnemo" : false
+  },
+  "SOL" : {
+    "image" : "../assets/img/cryptoicons/sol.svg",
+    "symbol" : "SOL",
+    "title" : "SOL",
+    "gas_fee" : "0.048309",
+    "mnemo" : false
+  },
+  "LUNA" : {
+    "image" : "../assets/img/cryptoicons/luna.svg",
+    "symbol" : "LUNA",
+    "title" : "LUNA",
+    "gas_fee" : "0.657895",
+    "mnemo" : false
+  },
+  "APE" : {
+    "image" : "../assets/img/cryptoicons/ape.svg",
+    "symbol" : "APE",
+    "title" : "APE",
+    "gas_fee" : "0.207039",
+    "mnemo" : false
+  },
+  "DOT" : {
+    "image" : "../assets/img/cryptoicons/dot.svg",
+    "symbol" : "DOT",
+    "title" : "DOT",
+    "gas_fee" : "0.168919",
+    "mnemo" : false
+  },
+  "MATIC" : {
+    "image" : "../assets/img/cryptoicons/matic.svg",
+    "symbol" : "MATIC",
+    "title" : "MATIC",
+    "gas_fee" : "0.862069",
+    "mnemo" : false
+  },
+  "NEAR" : {
+    "image" : "../assets/img/cryptoicons/near.svg",
+    "symbol" : "NEAR",
+    "title" : "NEAR",
+    "gas_fee" : "0.490196",
+    "mnemo" : false
+  },
+  "TWT" : {
+    "image" : "../assets/img/cryptoicons/twt.svg",
+    "symbol" : "TWT",
+    "title" : "TWT",
+    "gas_fee" : "0.769231",
+    "mnemo" : false
+  },
+  "RVN" : {
+    "image" : "../assets/img/cryptoicons/rvn.svg",
+    "symbol" : "RVN",
+    "title" : "RVN",
+    "gas_fee" : "38.51",
+    "mnemo" : false
+  },
+  "WOO" : {
+    "image" : "../assets/img/cryptoicons/woo.svg",
+    "symbol" : "WOO",
+    "title" : "WOO",
+    "gas_fee" : "5.38",
+    "mnemo" : false
+  },
+  "PAXG" : {
+    "image" : "../assets/img/cryptoicons/paxg.svg",
+    "symbol" : "PAXG",
+    "title" : "PAXG",
+    "gas_fee" : "0.000544",
+    "mnemo" : false
+  },
+  "ALPACA" : {
+    "image" : "../assets/img/cryptoicons/alpaca.svg",
+    "symbol" : "ALPACA",
+    "title" : "ALPACA",
+    "gas_fee" : "3.37",
+    "mnemo" : false
+  },
+  "GNO" : {
+    "image" : "../assets/img/cryptoicons/gno.svg",
+    "symbol" : "GNO",
+    "title" : "GNO",
+    "gas_fee" : "0.009606",
+    "mnemo" : false
+  },
+  "GAL" : {
+    "image" : "../assets/img/cryptoicons/gal.svg",
+    "symbol" : "GAL",
+    "title" : "GAL",
+    "gas_fee" : "0.598802",
+    "mnemo" : false
+  },
+  "ASTR" : {
+    "image" : "../assets/img/cryptoicons/astr.svg",
+    "symbol" : "ASTR",
+    "title" : "ASTR",
+    "gas_fee" : "15.24",
+    "mnemo" : false
+  },
+  "NEXO" : {
+    "image" : "../assets/img/cryptoicons/nexo.svg",
+    "symbol" : "NEXO",
+    "title" : "NEXO",
+    "gas_fee" : "1.56",
+    "mnemo" : false
+  },
+  "LOKA" : {
+    "image" : "../assets/img/cryptoicons/loka.svg",
+    "symbol" : "LOKA",
+    "title" : "LOKA",
+    "gas_fee" : "1.90",
+    "mnemo" : false
+  },
+  "FIL" : {
+    "image" : "../assets/img/cryptoicons/fil.svg",
+    "symbol" : "FIL",
+    "title" : "FIL",
+    "gas_fee" : "0.164474",
+    "mnemo" : false
+  },
+  "OCEAN" : {
+    "image" : "../assets/img/cryptoicons/ocean.svg",
+    "symbol" : "OCEAN",
+    "title" : "OCEAN",
+    "gas_fee" : "2.57",
+    "mnemo" : false
+  },
+  "COMP" : {
+    "image" : "../assets/img/cryptoicons/comp.svg",
+    "symbol" : "COMP",
+    "title" : "COMP",
+    "gas_fee" : "0.021617",
+    "mnemo" : false
+  },
+  "TOMO" : {
+    "image" : "../assets/img/cryptoicons/tomo.svg",
+    "symbol" : "TOMO",
+    "title" : "TOMO",
+    "gas_fee" : "2.71",
+    "mnemo" : false
+  },
+  "PUNDIX" : {
+    "image" : "../assets/img/cryptoicons/pundix.svg",
+    "symbol" : "PUNDIX",
+    "title" : "PUNDIX",
+    "gas_fee" : "2.21",
+    "mnemo" : false
+  },
+  "KEY" : {
+    "image" : "../assets/img/cryptoicons/key.svg",
+    "symbol" : "KEY",
+    "title" : "KEY",
+    "gas_fee" : "225.73",
+    "mnemo" : false
+  },
+  "VITE" : {
+    "image" : "../assets/img/cryptoicons/vite.svg",
+    "symbol" : "VITE",
+    "title" : "VITE",
+    "gas_fee" : "42.00",
+    "mnemo" : false
+  },
+  "BAT" : {
+    "image" : "../assets/img/cryptoicons/bat.svg",
+    "symbol" : "BAT",
+    "title" : "BAT",
+    "gas_fee" : "3.92",
+    "mnemo" : false
+  },
+  "GALA" : {
+    "image" : "../assets/img/cryptoicons/gala.svg",
+    "symbol" : "GALA",
+    "title" : "GALA",
+    "gas_fee" : "26.12",
+    "mnemo" : false
+  },
+  "RAD" : {
+    "image" : "../assets/img/cryptoicons/rad.svg",
+    "symbol" : "RAD",
+    "title" : "RAD",
+    "gas_fee" : "0.564972",
+    "mnemo" : false
+  },
+  "ANKR" : {
+    "image" : "../assets/img/cryptoicons/ankr.svg",
+    "symbol" : "ANKR",
+    "title" : "ANKR",
+    "gas_fee" : "29.88",
+    "mnemo" : false
+  },
+  "WING" : {
+    "image" : "../assets/img/cryptoicons/wing.svg",
+    "symbol" : "WING",
+    "title" : "WING",
+    "gas_fee" : "0.144300",
+    "mnemo" : false
+  },
+  "BAKE" : {
+    "image" : "../assets/img/cryptoicons/bake.svg",
+    "symbol" : "BAKE",
+    "title" : "BAKE",
+    "gas_fee" : "5.14",
+    "mnemo" : false
+  },
+  "STRAX" : {
+    "image" : "../assets/img/cryptoicons/strax.svg",
+    "symbol" : "STRAX",
+    "title" : "STRAX",
+    "gas_fee" : "1.92",
+    "mnemo" : false
+  },
+  "PERP" : {
+    "image" : "../assets/img/cryptoicons/perp.svg",
+    "symbol" : "PERP",
+    "title" : "PERP",
+    "gas_fee" : "0.980392",
+    "mnemo" : false
+  },
+  "EPX" : {
+    "image" : "../assets/img/cryptoicons/epx.svg",
+    "symbol" : "EPX",
+    "title" : "EPX",
+    "gas_fee" : "3030.30",
+    "mnemo" : false
+  },
+  "YFI" : {
+    "image" : "../assets/img/cryptoicons/yfi.svg",
+    "symbol" : "YFI",
+    "title" : "YFI",
+    "gas_fee" : "0.000100",
+    "mnemo" : false
+  },
+  "NMR" : {
+    "image" : "../assets/img/cryptoicons/nmr.svg",
+    "symbol" : "NMR",
+    "title" : "NMR",
+    "gas_fee" : "0.054945",
+    "mnemo" : false
+  },
+  "PYR" : {
+    "image" : "../assets/img/cryptoicons/pyr.svg",
+    "symbol" : "PYR",
+    "title" : "PYR",
+    "gas_fee" : "0.289017",
+    "mnemo" : false
+  },
+  "BOND" : {
+    "image" : "../assets/img/cryptoicons/bond.svg",
+    "symbol" : "BOND",
+    "title" : "BOND",
+    "gas_fee" : "0.218341",
+    "mnemo" : false
+  },
+  "JST" : {
+    "image" : "../assets/img/cryptoicons/jst.svg",
+    "symbol" : "JST",
+    "title" : "JST",
+    "gas_fee" : "36.21",
+    "mnemo" : false
+  },
+  "POWR" : {
+    "image" : "../assets/img/cryptoicons/powr.svg",
+    "symbol" : "POWR",
+    "title" : "POWR",
+    "gas_fee" : "5.36",
+    "mnemo" : false
+  },
+  "FIDA" : {
+    "image" : "../assets/img/cryptoicons/fida.svg",
+    "symbol" : "FIDA",
+    "title" : "FIDA",
+    "gas_fee" : "2.31",
+    "mnemo" : false
+  },
+  "VOXEL" : {
+    "image" : "../assets/img/cryptoicons/voxel.svg",
+    "symbol" : "VOXEL",
+    "title" : "VOXEL",
+    "gas_fee" : "3.75",
+    "mnemo" : false
+  },
+  "MANA" : {
+    "image" : "../assets/img/cryptoicons/mana.svg",
+    "symbol" : "MANA",
+    "title" : "MANA",
+    "gas_fee" : "1.67",
+    "mnemo" : false
+  },
+  "RARE" : {
+    "image" : "../assets/img/cryptoicons/rare.svg",
+    "symbol" : "RARE",
+    "title" : "RARE",
+    "gas_fee" : "7.17",
+    "mnemo" : false
+  },
+  "ADX" : {
+    "image" : "../assets/img/cryptoicons/adx.svg",
+    "symbol" : "ADX",
+    "title" : "ADX",
+    "gas_fee" : "5.45",
+    "mnemo" : false
+  },
+  "ONT" : {
+    "image" : "../assets/img/cryptoicons/ont.svg",
+    "symbol" : "ONT",
+    "title" : "ONT",
+    "gas_fee" : "4.50",
+    "mnemo" : false
+  },
+  "SAND" : {
+    "image" : "../assets/img/cryptoicons/sand.svg",
+    "symbol" : "SAND",
+    "title" : "SAND",
+    "gas_fee" : "1.61",
+    "mnemo" : false
+  },
+  "COCOS" : {
+    "image" : "../assets/img/cryptoicons/cocos.svg",
+    "symbol" : "COCOS",
+    "title" : "COCOS",
+    "gas_fee" : "0.641026",
+    "mnemo" : false
+  },
+  "ALICE" : {
+    "image" : "../assets/img/cryptoicons/alice.svg",
+    "symbol" : "ALICE",
+    "title" : "ALICE",
+    "gas_fee" : "0.621118",
+    "mnemo" : false
+  },
+  "MTL" : {
+    "image" : "../assets/img/cryptoicons/mtl.svg",
+    "symbol" : "MTL",
+    "title" : "MTL",
+    "gas_fee" : "0.869565",
+    "mnemo" : false
+  },
+  "FLM" : {
+    "image" : "../assets/img/cryptoicons/flm.svg",
+    "symbol" : "FLM",
+    "title" : "FLM",
+    "gas_fee" : "10.35",
+    "mnemo" : false
+  },
+  "MDX" : {
+    "image" : "../assets/img/cryptoicons/mdx.svg",
+    "symbol" : "MDX",
+    "title" : "MDX",
+    "gas_fee" : "11.29",
+    "mnemo" : false
+  },
+  "QTUM" : {
+    "image" : "../assets/img/cryptoicons/qtum.svg",
+    "symbol" : "QTUM",
+    "title" : "QTUM",
+    "gas_fee" : "0.328947",
+    "mnemo" : false
+  },
+  "BNT" : {
+    "image" : "../assets/img/cryptoicons/bnt.svg",
+    "symbol" : "BNT",
+    "title" : "BNT",
+    "gas_fee" : "2.25",
+    "mnemo" : false
+  },
+  "XVS" : {
+    "image" : "../assets/img/cryptoicons/xvs.svg",
+    "symbol" : "XVS",
+    "title" : "XVS",
+    "gas_fee" : "0.194553",
+    "mnemo" : false
+  },
+  "BICO" : {
+    "image" : "../assets/img/cryptoicons/bico.svg",
+    "symbol" : "BICO",
+    "title" : "BICO",
+    "gas_fee" : "2.56",
+    "mnemo" : false
+  },
+  "UMA" : {
+    "image" : "../assets/img/cryptoicons/uma.svg",
+    "symbol" : "UMA",
+    "title" : "UMA",
+    "gas_fee" : "0.490196",
+    "mnemo" : false
+  },
+  "CLV" : {
+    "image" : "../assets/img/cryptoicons/clv.svg",
+    "symbol" : "CLV",
+    "title" : "CLV",
+    "gas_fee" : "14.27",
+    "mnemo" : false
+  },
+  "AKRO" : {
+    "image" : "../assets/img/cryptoicons/akro.svg",
+    "symbol" : "AKRO",
+    "title" : "AKRO",
+    "gas_fee" : "175.13",
+    "mnemo" : false
+  },
+  "LSK" : {
+    "image" : "../assets/img/cryptoicons/lsk.svg",
+    "symbol" : "LSK",
+    "title" : "LSK",
+    "gas_fee" : "0.970874",
+    "mnemo" : false
+  },
+  "DOCK" : {
+    "image" : "../assets/img/cryptoicons/dock.svg",
+    "symbol" : "DOCK",
+    "title" : "DOCK",
+    "gas_fee" : "40.36",
+    "mnemo" : false
+  },
+  "CFX" : {
+    "image" : "../assets/img/cryptoicons/cfx.svg",
+    "symbol" : "CFX",
+    "title" : "CFX",
+    "gas_fee" : "4.93",
+    "mnemo" : false
+  },
+  "CELO" : {
+    "image" : "../assets/img/cryptoicons/celo.svg",
+    "symbol" : "CELO",
+    "title" : "CELO",
+    "gas_fee" : "1.51",
+    "mnemo" : false
+  },
+  "IOTX" : {
+    "image" : "../assets/img/cryptoicons/iotx.svg",
+    "symbol" : "IOTX",
+    "title" : "IOTX",
+    "gas_fee" : "40.26",
+    "mnemo" : false
+  },
+  "CRV" : {
+    "image" : "../assets/img/cryptoicons/crv.svg",
+    "symbol" : "CRV",
+    "title" : "CRV",
+    "gas_fee" : "1.04",
+    "mnemo" : false
+  },
+  "CELR" : {
+    "image" : "../assets/img/cryptoicons/celr.svg",
+    "symbol" : "CELR",
+    "title" : "CELR",
+    "gas_fee" : "56.40",
+    "mnemo" : false
+  },
+  "OXT" : {
+    "image" : "../assets/img/cryptoicons/oxt.svg",
+    "symbol" : "OXT",
+    "title" : "OXT",
+    "gas_fee" : "11.07",
+    "mnemo" : false
+  },
+  "FIO" : {
+    "image" : "../assets/img/cryptoicons/fio.svg",
+    "symbol" : "FIO",
+    "title" : "FIO",
+    "gas_fee" : "27.70",
+    "mnemo" : false
+  },
+  "SCRT" : {
+    "image" : "../assets/img/cryptoicons/scrt.svg",
+    "symbol" : "SCRT",
+    "title" : "SCRT",
+    "gas_fee" : "1.36",
+    "mnemo" : false
+  },
+  "AUDIO" : {
+    "image" : "../assets/img/cryptoicons/audio.svg",
+    "symbol" : "AUDIO",
+    "title" : "AUDIO",
+    "gas_fee" : "3.71",
+    "mnemo" : false
+  },
+  "CHZ" : {
+    "image" : "../assets/img/cryptoicons/chz.svg",
+    "symbol" : "CHZ",
+    "title" : "CHZ",
+    "gas_fee" : "8.14",
+    "mnemo" : false
+  }
+}

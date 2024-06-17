@@ -1,0 +1,447 @@
+{
+  "BTC" : {
+    "symbol" : "BTC",
+    "name" : "Bitcoin",
+    "image" : "../assets/img/cryptoicons/btc.svg"
+  },
+  "ETH" : {
+    "symbol" : "ETH",
+    "name" : "Ethereum",
+    "image" : "../assets/img/cryptoicons/eth.svg"
+  },
+  "LTC" : {
+    "symbol" : "LTC",
+    "name" : "Litecoin",
+    "image" : "../assets/img/cryptoicons/ltc.svg"
+  },
+  "TRX" : {
+    "symbol" : "TRX",
+    "name" : "Tron",
+    "image" : "../assets/img/cryptoicons/trx.svg"
+  },
+  "BNB" : {
+    "symbol" : "BNB",
+    "name" : "BNB BEP-2",
+    "image" : "../assets/img/cryptoicons/bnb.svg"
+  },
+  "BCH" : {
+    "symbol" : "BCH",
+    "name" : "Bitcoin Cash",
+    "image" : "../assets/img/cryptoicons/bch.svg"
+  },
+  "DOGE" : {
+    "symbol" : "DOGE",
+    "name" : "Dogecoin",
+    "image" : "../assets/img/cryptoicons/doge.svg"
+  },
+  "XMR" : {
+    "symbol" : "XMR",
+    "name" : "Monero",
+    "image" : "../assets/img/cryptoicons/xmr.svg"
+  },
+  "XLM" : {
+    "symbol" : "XLM",
+    "name" : "Stellar",
+    "image" : "../assets/img/cryptoicons/xlm.svg"
+  },
+  "XTZ" : {
+    "symbol" : "XTZ",
+    "name" : "Tezos",
+    "image" : "../assets/img/cryptoicons/xtz.svg"
+  },
+  "EOS" : {
+    "symbol" : "EOS",
+    "name" : "EOS",
+    "image" : "../assets/img/cryptoicons/eos.svg"
+  },
+  "SHIB" : {
+    "symbol" : "SHIB",
+    "name" : "SHIBA INU BEP-20",
+    "image" : "../assets/img/cryptoicons/shib.svg"
+  },
+  "LINK" : {
+    "symbol" : "LINK",
+    "name" : "Chainlink ERC-20",
+    "image" : "../assets/img/cryptoicons/link.svg"
+  },
+  "ETC" : {
+    "symbol" : "ETC",
+    "name" : "Ethereum Classic",
+    "image" : "../assets/img/cryptoicons/etc.svg"
+  },
+  "XRP" : {
+    "symbol" : "XRP",
+    "name" : "Ripple",
+    "image" : "../assets/img/cryptoicons/xrp.svg"
+  },
+  "ADA" : {
+    "symbol" : "ADA",
+    "name" : "Cardano",
+    "image" : "../assets/img/cryptoicons/ada.svg"
+  },
+  "DASH" : {
+    "symbol" : "DASH",
+    "name" : "Dash",
+    "image" : "../assets/img/cryptoicons/dash.svg"
+  },
+  "USDT" : {
+    "symbol" : "USDT",
+    "name" : "Tether",
+    "image" : "../assets/img/cryptoicons/usdt.svg"
+  },
+  "USDC" : {
+    "symbol" : "USDC",
+    "name" : "USD Coin",
+    "image" : "../assets/img/cryptoicons/usdc.svg"
+  },
+  "BUSD" : {
+    "symbol" : "BUSD",
+    "name" : "Binance USD",
+    "image" : "../assets/img/cryptoicons/busd.svg"
+  },
+  "SOL" : {
+    "symbol" : "SOL",
+    "name" : "SOL",
+    "image" : "../assets/img/cryptoicons/sol.svg"
+  },
+  "LUNA" : {
+    "symbol" : "LUNA",
+    "name" : "LUNA",
+    "image" : "../assets/img/cryptoicons/luna.svg"
+  },
+  "APE" : {
+    "symbol" : "APE",
+    "name" : "APE",
+    "image" : "../assets/img/cryptoicons/ape.svg"
+  },
+  "DOT" : {
+    "symbol" : "DOT",
+    "name" : "DOT",
+    "image" : "../assets/img/cryptoicons/dot.svg"
+  },
+  "MATIC" : {
+    "symbol" : "MATIC",
+    "name" : "MATIC",
+    "image" : "../assets/img/cryptoicons/matic.svg"
+  },
+  "NEAR" : {
+    "symbol" : "NEAR",
+    "name" : "NEAR",
+    "image" : "../assets/img/cryptoicons/near.svg"
+  },
+  "TWT" : {
+    "symbol" : "TWT",
+    "name" : "TWT",
+    "image" : "../assets/img/cryptoicons/twt.svg"
+  },
+  "RVN" : {
+    "symbol" : "RVN",
+    "name" : "RVN",
+    "image" : "../assets/img/cryptoicons/rvn.svg"
+  },
+  "WOO" : {
+    "symbol" : "WOO",
+    "name" : "WOO",
+    "image" : "../assets/img/cryptoicons/woo.svg"
+  },
+  "PAXG" : {
+    "symbol" : "PAXG",
+    "name" : "PAXG",
+    "image" : "../assets/img/cryptoicons/paxg.svg"
+  },
+  "ALPACA" : {
+    "symbol" : "ALPACA",
+    "name" : "ALPACA",
+    "image" : "../assets/img/cryptoicons/alpaca.svg"
+  },
+  "GNO" : {
+    "symbol" : "GNO",
+    "name" : "GNO",
+    "image" : "../assets/img/cryptoicons/gno.svg"
+  },
+  "GAL" : {
+    "symbol" : "GAL",
+    "name" : "GAL",
+    "image" : "../assets/img/cryptoicons/gal.svg"
+  },
+  "ASTR" : {
+    "symbol" : "ASTR",
+    "name" : "ASTR",
+    "image" : "../assets/img/cryptoicons/astr.svg"
+  },
+  "NEXO" : {
+    "symbol" : "NEXO",
+    "name" : "NEXO",
+    "image" : "../assets/img/cryptoicons/nexo.svg"
+  },
+  "LOKA" : {
+    "symbol" : "LOKA",
+    "name" : "LOKA",
+    "image" : "../assets/img/cryptoicons/loka.svg"
+  },
+  "FIL" : {
+    "symbol" : "FIL",
+    "name" : "FIL",
+    "image" : "../assets/img/cryptoicons/fil.svg"
+  },
+  "OCEAN" : {
+    "symbol" : "OCEAN",
+    "name" : "OCEAN",
+    "image" : "../assets/img/cryptoicons/ocean.svg"
+  },
+  "COMP" : {
+    "symbol" : "COMP",
+    "name" : "COMP",
+    "image" : "../assets/img/cryptoicons/comp.svg"
+  },
+  "TOMO" : {
+    "symbol" : "TOMO",
+    "name" : "TOMO",
+    "image" : "../assets/img/cryptoicons/tomo.svg"
+  },
+  "PUNDIX" : {
+    "symbol" : "PUNDIX",
+    "name" : "PUNDIX",
+    "image" : "../assets/img/cryptoicons/pundix.svg"
+  },
+  "KEY" : {
+    "symbol" : "KEY",
+    "name" : "KEY",
+    "image" : "../assets/img/cryptoicons/key.svg"
+  },
+  "VITE" : {
+    "symbol" : "VITE",
+    "name" : "VITE",
+    "image" : "../assets/img/cryptoicons/vite.svg"
+  },
+  "BAT" : {
+    "symbol" : "BAT",
+    "name" : "BAT",
+    "image" : "../assets/img/cryptoicons/bat.svg"
+  },
+  "GALA" : {
+    "symbol" : "GALA",
+    "name" : "GALA",
+    "image" : "../assets/img/cryptoicons/gala.svg"
+  },
+  "RAD" : {
+    "symbol" : "RAD",
+    "name" : "RAD",
+    "image" : "../assets/img/cryptoicons/rad.svg"
+  },
+  "ANKR" : {
+    "symbol" : "ANKR",
+    "name" : "ANKR",
+    "image" : "../assets/img/cryptoicons/ankr.svg"
+  },
+  "WING" : {
+    "symbol" : "WING",
+    "name" : "WING",
+    "image" : "../assets/img/cryptoicons/wing.svg"
+  },
+  "BAKE" : {
+    "symbol" : "BAKE",
+    "name" : "BAKE",
+    "image" : "../assets/img/cryptoicons/bake.svg"
+  },
+  "STRAX" : {
+    "symbol" : "STRAX",
+    "name" : "STRAX",
+    "image" : "../assets/img/cryptoicons/strax.svg"
+  },
+  "PERP" : {
+    "symbol" : "PERP",
+    "name" : "PERP",
+    "image" : "../assets/img/cryptoicons/perp.svg"
+  },
+  "EPX" : {
+    "symbol" : "EPX",
+    "name" : "EPX",
+    "image" : "../assets/img/cryptoicons/epx.svg"
+  },
+  "YFI" : {
+    "symbol" : "YFI",
+    "name" : "YFI",
+    "image" : "../assets/img/cryptoicons/yfi.svg"
+  },
+  "NMR" : {
+    "symbol" : "NMR",
+    "name" : "NMR",
+    "image" : "../assets/img/cryptoicons/nmr.svg"
+  },
+  "PYR" : {
+    "symbol" : "PYR",
+    "name" : "PYR",
+    "image" : "../assets/img/cryptoicons/pyr.svg"
+  },
+  "BOND" : {
+    "symbol" : "BOND",
+    "name" : "BOND",
+    "image" : "../assets/img/cryptoicons/bond.svg"
+  },
+  "JST" : {
+    "symbol" : "JST",
+    "name" : "JST",
+    "image" : "../assets/img/cryptoicons/jst.svg"
+  },
+  "POWR" : {
+    "symbol" : "POWR",
+    "name" : "POWR",
+    "image" : "../assets/img/cryptoicons/powr.svg"
+  },
+  "FIDA" : {
+    "symbol" : "FIDA",
+    "name" : "FIDA",
+    "image" : "../assets/img/cryptoicons/fida.svg"
+  },
+  "VOXEL" : {
+    "symbol" : "VOXEL",
+    "name" : "VOXEL",
+    "image" : "../assets/img/cryptoicons/voxel.svg"
+  },
+  "MANA" : {
+    "symbol" : "MANA",
+    "name" : "MANA",
+    "image" : "../assets/img/cryptoicons/mana.svg"
+  },
+  "RARE" : {
+    "symbol" : "RARE",
+    "name" : "RARE",
+    "image" : "../assets/img/cryptoicons/rare.svg"
+  },
+  "ADX" : {
+    "symbol" : "ADX",
+    "name" : "ADX",
+    "image" : "../assets/img/cryptoicons/adx.svg"
+  },
+  "ONT" : {
+    "symbol" : "ONT",
+    "name" : "ONT",
+    "image" : "../assets/img/cryptoicons/ont.svg"
+  },
+  "SAND" : {
+    "symbol" : "SAND",
+    "name" : "SAND",
+    "image" : "../assets/img/cryptoicons/sand.svg"
+  },
+  "COCOS" : {
+    "symbol" : "COCOS",
+    "name" : "COCOS",
+    "image" : "../assets/img/cryptoicons/cocos.svg"
+  },
+  "ALICE" : {
+    "symbol" : "ALICE",
+    "name" : "ALICE",
+    "image" : "../assets/img/cryptoicons/alice.svg"
+  },
+  "MTL" : {
+    "symbol" : "MTL",
+    "name" : "MTL",
+    "image" : "../assets/img/cryptoicons/mtl.svg"
+  },
+  "FLM" : {
+    "symbol" : "FLM",
+    "name" : "FLM",
+    "image" : "../assets/img/cryptoicons/flm.svg"
+  },
+  "MDX" : {
+    "symbol" : "MDX",
+    "name" : "MDX",
+    "image" : "../assets/img/cryptoicons/mdx.svg"
+  },
+  "QTUM" : {
+    "symbol" : "QTUM",
+    "name" : "QTUM",
+    "image" : "../assets/img/cryptoicons/qtum.svg"
+  },
+  "BNT" : {
+    "symbol" : "BNT",
+    "name" : "BNT",
+    "image" : "../assets/img/cryptoicons/bnt.svg"
+  },
+  "XVS" : {
+    "symbol" : "XVS",
+    "name" : "XVS",
+    "image" : "../assets/img/cryptoicons/xvs.svg"
+  },
+  "BICO" : {
+    "symbol" : "BICO",
+    "name" : "BICO",
+    "image" : "../assets/img/cryptoicons/bico.svg"
+  },
+  "UMA" : {
+    "symbol" : "UMA",
+    "name" : "UMA",
+    "image" : "../assets/img/cryptoicons/uma.svg"
+  },
+  "CLV" : {
+    "symbol" : "CLV",
+    "name" : "CLV",
+    "image" : "../assets/img/cryptoicons/404icon.svg"
+  },
+  "AKRO" : {
+    "symbol" : "AKRO",
+    "name" : "AKRO",
+    "image" : "../assets/img/cryptoicons/akro.svg"
+  },
+  "LSK" : {
+    "symbol" : "LSK",
+    "name" : "LSK",
+    "image" : "../assets/img/cryptoicons/lsk.svg"
+  },
+  "DOCK" : {
+    "symbol" : "DOCK",
+    "name" : "DOCK",
+    "image" : "../assets/img/cryptoicons/dock.svg"
+  },
+  "CFX" : {
+    "symbol" : "CFX",
+    "name" : "CFX",
+    "image" : "../assets/img/cryptoicons/cfx.svg"
+  },
+  "CELO" : {
+    "symbol" : "CELO",
+    "name" : "CELO",
+    "image" : "../assets/img/cryptoicons/celo.svg"
+  },
+  "IOTX" : {
+    "symbol" : "IOTX",
+    "name" : "IOTX",
+    "image" : "../assets/img/cryptoicons/iotx.svg"
+  },
+  "CRV" : {
+    "symbol" : "CRV",
+    "name" : "CRV",
+    "image" : "../assets/img/cryptoicons/crv.svg"
+  },
+  "CELR" : {
+    "symbol" : "CELR",
+    "name" : "CELR",
+    "image" : "../assets/img/cryptoicons/celr.svg"
+  },
+  "OXT" : {
+    "symbol" : "OXT",
+    "name" : "OXT",
+    "image" : "../assets/img/cryptoicons/oxt.svg"
+  },
+  "FIO" : {
+    "symbol" : "FIO",
+    "name" : "FIO",
+    "image" : "../assets/img/cryptoicons/fio.svg"
+  },
+  "SCRT" : {
+    "symbol" : "SCRT",
+    "name" : "SCRT",
+    "image" : "../assets/img/cryptoicons/scrt.svg"
+  },
+  "AUDIO" : {
+    "symbol" : "AUDIO",
+    "name" : "AUDIO",
+    "image" : "../assets/img/cryptoicons/audio.svg"
+  },
+  "CHZ" : {
+    "symbol" : "CHZ",
+    "name" : "CHZ",
+    "image" : "../assets/img/cryptoicons/chz.svg"
+  }
+}

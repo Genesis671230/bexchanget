@@ -1,0 +1,514 @@
+.toast-title {
+  font-weight: bold;
+}
+
+.toast-message {
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.toast-message a,
+.toast-message label {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+
+}
+
+.toast-message a:hover {
+  color: #CCCCCC;
+  text-decoration: none;
+}
+
+.toast-close-button {
+  position: relative;
+  right: -0.3em;
+  top: -0.3em;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  color: #FFFFFF;
+  -webkit-text-shadow: 0 1px 0 #ffffff;
+  text-shadow: 0 1px 0 #ffffff;
+  opacity: 0.8;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  filter: alpha(opacity=80);
+  line-height: 1;
+}
+
+.toast-close-button:hover,
+.toast-close-button:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.4;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  filter: alpha(opacity=40);
+}
+
+.rtl .toast-close-button {
+  left: -0.3em;
+  float: left;
+  right: 0.3em;
+}
+
+/*Additional properties for button version
+iOS requires the button element instead of an anchor tag.
+If you want the anchor version, it requires `href="#"`.*/
+button.toast-close-button {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}
+
+.toast-top-center {
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
+.toast-bottom-center {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+.toast-top-full-width {
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
+.toast-bottom-full-width {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+.toast-top-left {
+  top: 12px;
+  left: 12px;
+}
+
+.toast-top-right {
+  top: 12px;
+  right: 12px;
+}
+
+.toast-bottom-right {
+  right: 12px;
+  bottom: 12px;
+}
+
+.toast-bottom-left {
+  bottom: 12px;
+  left: 12px;
+}
+
+#toast-container {
+  position: fixed;
+  z-index: 999999;
+  pointer-events: none;
+  /*overrides*/
+}
+
+#toast-container * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#toast-container>div {
+  position: relative;
+  pointer-events: auto;
+  overflow: hidden;
+  margin: 0 0 6px;
+  padding: 30px 20px 30px 55px;
+  font-size: 16px;
+  width: 350px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px 3px 3px 3px;
+  background-position: 15px center;
+  background-repeat: no-repeat;
+  -moz-box-shadow: 0 0 12px #999999;
+  -webkit-box-shadow: 0 0 12px #999999;
+  box-shadow: 0 0 12px #999999;
+  color: #FFFFFF;
+  /* opacity: 0.8; */
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  filter: alpha(opacity=80);
+}
+
+#toast-container>div.rtl {
+  direction: rtl;
+  padding: 15px 50px 15px 15px;
+  background-position: right 15px center;
+}
+
+#toast-container>div:hover {
+  -moz-box-shadow: 0 0 12px #000000;
+  -webkit-box-shadow: 0 0 12px #000000;
+  box-shadow: 0 0 12px #000000;
+  opacity: 1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  filter: alpha(opacity=100);
+  cursor: pointer;
+}
+
+#toast-container>.toast-info {
+  background-image: url("data:image/svg+xml,%3Csvg width='28' height='29' viewBox='0 0 28 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.843 0.956524C8.83955 1.44715 6.21078 2.79064 4.07429 4.92724C2.0867 6.91482 0.746401 9.42423 0.18079 12.2175C-0.0643281 13.4282 -0.0591932 16.418 0.190091 17.5723C0.800269 20.3975 2.08505 22.7861 4.06741 24.781C6.03949 26.7656 8.45114 28.0595 11.3423 28.6841C12.4608 28.9257 15.4685 28.922 16.6683 28.6776C19.4735 28.106 21.9373 26.7877 23.936 24.7889C25.9277 22.7972 27.204 20.4173 27.8318 17.5239C27.9593 16.9366 28 16.2908 28 14.8595C28 13.4283 27.9593 12.7824 27.8318 12.1952C27.203 9.2976 25.9122 6.89205 23.928 4.92036C21.9725 2.97705 19.6743 1.72056 16.9217 1.08974C15.794 0.83135 13.0501 0.759364 11.843 0.956524ZM21.2491 9.94265C21.7014 10.3822 22.1336 10.8015 22.2094 10.8743C22.2853 10.9471 22.3345 11.0413 22.3188 11.0838C22.3031 11.1262 21.9223 11.5462 21.4728 12.0171C19.9231 13.6403 18.0841 15.5807 15.6548 18.1558C14.7761 19.0871 13.6644 20.2533 13.1842 20.7473L12.3111 21.6456L9.74435 19.076L7.17749 16.5065L8.16969 15.5143L9.16188 14.5221L10.7414 16.0995L12.3209 17.6768L12.69 17.2612C12.8931 17.0327 13.3925 16.4969 13.8 16.0706C14.2074 15.6443 15.2817 14.5122 16.1872 13.5548C17.0927 12.5974 18.2076 11.4202 18.6647 10.9389C19.1218 10.4576 19.6832 9.85662 19.9123 9.60356C20.1413 9.3505 20.3508 9.14336 20.3777 9.14336C20.4045 9.14336 20.7967 9.50309 21.2491 9.94265Z' fill='white'/%3E%3C/svg%3E%0A") !important;
+}
+
+#toast-container>.toast-error {
+  background-image: url("data:image/svg+xml,%3Csvg width='28' height='29' viewBox='0 0 28 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.2487 0.0151659C12.5855 0.0434052 12.3726 0.0702882 11.3354 0.256871C10.4632 0.41381 9.48045 0.703032 8.71978 1.02674C8.51998 1.11175 8.26931 1.21705 8.16275 1.2607C7.70661 1.44762 6.58115 2.10042 5.89222 2.57767C4.65938 3.43168 3.57597 4.52396 2.49552 6.00218C2.05076 6.61066 1.26553 8.07198 0.952042 8.8746C0.702297 9.51412 0.498906 10.1839 0.290091 11.0543C0.24887 11.2263 0.126274 12.0104 0.0439777 12.6285C-0.0161821 13.0803 -0.0140993 14.957 0.0470293 15.4137C0.252987 16.952 0.510241 18.0122 0.952042 19.1434C1.26815 19.9527 2.10796 21.5162 2.49169 22.0097C2.54705 22.0809 2.65778 22.2318 2.7377 22.3449C3.45129 23.3553 4.83947 24.7179 5.8913 25.4404C6.61545 25.9377 7.70675 26.5705 8.16275 26.7573C8.26931 26.801 8.51998 26.906 8.71978 26.9908C9.19636 27.1929 9.9627 27.4479 10.4693 27.5729C10.6926 27.628 10.9516 27.6924 11.0448 27.7161C11.2129 27.7587 11.9669 27.8777 12.619 27.9645C13.0586 28.0231 14.942 28.0232 15.38 27.9647C17.3202 27.7056 18.4727 27.3856 19.9412 26.6982C20.7056 26.3403 21.327 25.9797 22.1083 25.4404C23.1552 24.7176 24.5588 23.3397 25.2613 22.3449C25.3412 22.2318 25.452 22.0809 25.5073 22.0097C25.8911 21.5162 26.7309 19.9527 27.047 19.1434C27.5031 17.9755 27.7384 17.0033 27.9555 15.3895C28.0147 14.9495 28.0149 13.0661 27.9557 12.6285C27.8683 11.9814 27.7494 11.2229 27.7089 11.0543C27.5018 10.1906 27.3016 9.5302 27.0483 8.8746C26.7482 8.09795 25.892 6.50497 25.5073 6.00766C25.452 5.93607 25.3308 5.77259 25.2381 5.64437C24.532 4.66787 23.2665 3.40475 22.3354 2.74721C22.2223 2.66728 22.0714 2.55656 22.0002 2.50119C21.5067 2.11747 19.9432 1.27765 19.1339 0.961545C17.269 0.233185 15.3549 -0.0745895 13.2487 0.0151659ZM14.612 4.85774C15.3933 5.09392 15.968 5.75878 16.1584 6.64646C16.2477 7.06268 16.2452 7.94561 16.152 8.92342C16.1104 9.35985 16.0671 9.732 16.0557 9.75035C16.0444 9.76876 15.9798 10.1078 15.9122 10.5038C15.7418 11.503 15.5575 12.3421 15.2591 13.4762C15.2066 13.676 15.1217 14.003 15.0704 14.2028C14.7304 15.5289 14.6156 15.8453 14.3977 16.0565C14.2608 16.1892 14.2006 16.2129 14.0007 16.2129C13.8167 16.2129 13.7364 16.1864 13.634 16.0918C13.4836 15.953 13.2679 15.5016 13.1826 15.1473C13.1505 15.0141 13.0724 14.7307 13.009 14.5176C12.9456 14.3045 12.8572 13.9775 12.8126 13.791C12.768 13.6046 12.6785 13.234 12.6138 12.9676C11.97 10.3182 11.6731 8.05905 11.8184 6.91509C12.0113 5.39521 13.2856 4.45677 14.612 4.85774ZM14.6463 19.2152C15.1763 19.4075 15.4942 19.7316 15.6815 20.2706C15.9394 21.0124 15.8046 21.8048 15.3319 22.3272C15.1926 22.4811 14.983 22.6547 14.8661 22.713C14.5615 22.8648 14.0997 22.9286 13.7076 22.8729C13.3179 22.8177 13.2599 22.7969 12.991 22.6154C12.5676 22.3297 12.2681 21.7974 12.1821 21.1778C12.1491 20.9399 12.2646 20.3344 12.3899 20.088C12.4764 19.9179 12.694 19.6177 12.7641 19.5715C12.7908 19.5538 12.8645 19.4945 12.9277 19.4395C12.991 19.3846 13.1545 19.2985 13.291 19.2482C13.4276 19.1979 13.572 19.1446 13.612 19.1297C13.8083 19.0566 14.3273 19.0995 14.6463 19.2152Z' fill='white'/%3E%3C/svg%3E%0A") !important;
+}
+
+#toast-container>.toast-success {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADsSURBVEhLY2AYBfQMgf///3P8+/evAIgvA/FsIF+BavYDDWMBGroaSMMBiE8VC7AZDrIFaMFnii3AZTjUgsUUWUDA8OdAH6iQbQEhw4HyGsPEcKBXBIC4ARhex4G4BsjmweU1soIFaGg/WtoFZRIZdEvIMhxkCCjXIVsATV6gFGACs4Rsw0EGgIIH3QJYJgHSARQZDrWAB+jawzgs+Q2UO49D7jnRSRGoEFRILcdmEMWGI0cm0JJ2QpYA1RDvcmzJEWhABhD/pqrL0S0CWuABKgnRki9lLseS7g2AlqwHWQSKH4oKLrILpRGhEQCw2LiRUIa4lwAAAABJRU5ErkJggg==") !important;
+}
+
+#toast-container>.toast-warning {
+  /* background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGYSURBVEhL5ZSvTsNQFMbXZGICMYGYmJhAQIJAICYQPAACiSDB8AiICQQJT4CqQEwgJvYASAQCiZiYmJhAIBATCARJy+9rTsldd8sKu1M0+dLb057v6/lbq/2rK0mS/TRNj9cWNAKPYIJII7gIxCcQ51cvqID+GIEX8ASG4B1bK5gIZFeQfoJdEXOfgX4QAQg7kH2A65yQ87lyxb27sggkAzAuFhbbg1K2kgCkB1bVwyIR9m2L7PRPIhDUIXgGtyKw575yz3lTNs6X4JXnjV+LKM/m3MydnTbtOKIjtz6VhCBq4vSm3ncdrD2lk0VgUXSVKjVDJXJzijW1RQdsU7F77He8u68koNZTz8Oz5yGa6J3H3lZ0xYgXBK2QymlWWA+RWnYhskLBv2vmE+hBMCtbA7KX5drWyRT/2JsqZ2IvfB9Y4bWDNMFbJRFmC9E74SoS0CqulwjkC0+5bpcV1CZ8NMej4pjy0U+doDQsGyo1hzVJttIjhQ7GnBtRFN1UarUlH8F3xict+HY07rEzoUGPlWcjRFRr4/gChZgc3ZL2d8oAAAAASUVORK5CYII=") !important; */
+  background-image: url("data:image/svg+xml,%3Csvg width='28' height='29' viewBox='0 0 28 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.2487 0.0151659C12.5855 0.0434052 12.3726 0.0702882 11.3354 0.256871C10.4632 0.41381 9.48045 0.703032 8.71978 1.02674C8.51998 1.11175 8.26931 1.21705 8.16275 1.2607C7.70661 1.44762 6.58115 2.10042 5.89222 2.57767C4.65938 3.43168 3.57597 4.52396 2.49552 6.00218C2.05076 6.61066 1.26553 8.07198 0.952042 8.8746C0.702297 9.51412 0.498906 10.1839 0.290091 11.0543C0.24887 11.2263 0.126274 12.0104 0.0439777 12.6285C-0.0161821 13.0803 -0.0140993 14.957 0.0470293 15.4137C0.252987 16.952 0.510241 18.0122 0.952042 19.1434C1.26815 19.9527 2.10796 21.5162 2.49169 22.0097C2.54705 22.0809 2.65778 22.2318 2.7377 22.3449C3.45129 23.3553 4.83947 24.7179 5.8913 25.4404C6.61545 25.9377 7.70675 26.5705 8.16275 26.7573C8.26931 26.801 8.51998 26.906 8.71978 26.9908C9.19636 27.1929 9.9627 27.4479 10.4693 27.5729C10.6926 27.628 10.9516 27.6924 11.0448 27.7161C11.2129 27.7587 11.9669 27.8777 12.619 27.9645C13.0586 28.0231 14.942 28.0232 15.38 27.9647C17.3202 27.7056 18.4727 27.3856 19.9412 26.6982C20.7056 26.3403 21.327 25.9797 22.1083 25.4404C23.1552 24.7176 24.5588 23.3397 25.2613 22.3449C25.3412 22.2318 25.452 22.0809 25.5073 22.0097C25.8911 21.5162 26.7309 19.9527 27.047 19.1434C27.5031 17.9755 27.7384 17.0033 27.9555 15.3895C28.0147 14.9495 28.0149 13.0661 27.9557 12.6285C27.8683 11.9814 27.7494 11.2229 27.7089 11.0543C27.5018 10.1906 27.3016 9.5302 27.0483 8.8746C26.7482 8.09795 25.892 6.50497 25.5073 6.00766C25.452 5.93607 25.3308 5.77259 25.2381 5.64437C24.532 4.66787 23.2665 3.40475 22.3354 2.74721C22.2223 2.66728 22.0714 2.55656 22.0002 2.50119C21.5067 2.11747 19.9432 1.27765 19.1339 0.961545C17.269 0.233185 15.3549 -0.0745895 13.2487 0.0151659ZM14.612 4.85774C15.3933 5.09392 15.968 5.75878 16.1584 6.64646C16.2477 7.06268 16.2452 7.94561 16.152 8.92342C16.1104 9.35985 16.0671 9.732 16.0557 9.75035C16.0444 9.76876 15.9798 10.1078 15.9122 10.5038C15.7418 11.503 15.5575 12.3421 15.2591 13.4762C15.2066 13.676 15.1217 14.003 15.0704 14.2028C14.7304 15.5289 14.6156 15.8453 14.3977 16.0565C14.2608 16.1892 14.2006 16.2129 14.0007 16.2129C13.8167 16.2129 13.7364 16.1864 13.634 16.0918C13.4836 15.953 13.2679 15.5016 13.1826 15.1473C13.1505 15.0141 13.0724 14.7307 13.009 14.5176C12.9456 14.3045 12.8572 13.9775 12.8126 13.791C12.768 13.6046 12.6785 13.234 12.6138 12.9676C11.97 10.3182 11.6731 8.05905 11.8184 6.91509C12.0113 5.39521 13.2856 4.45677 14.612 4.85774ZM14.6463 19.2152C15.1763 19.4075 15.4942 19.7316 15.6815 20.2706C15.9394 21.0124 15.8046 21.8048 15.3319 22.3272C15.1926 22.4811 14.983 22.6547 14.8661 22.713C14.5615 22.8648 14.0997 22.9286 13.7076 22.8729C13.3179 22.8177 13.2599 22.7969 12.991 22.6154C12.5676 22.3297 12.2681 21.7974 12.1821 21.1778C12.1491 20.9399 12.2646 20.3344 12.3899 20.088C12.4764 19.9179 12.694 19.6177 12.7641 19.5715C12.7908 19.5538 12.8645 19.4945 12.9277 19.4395C12.991 19.3846 13.1545 19.2985 13.291 19.2482C13.4276 19.1979 13.572 19.1446 13.612 19.1297C13.8083 19.0566 14.3273 19.0995 14.6463 19.2152Z' fill='white'/%3E%3C/svg%3E%0A") !important;
+}
+
+#toast-container.toast-top-center>div,
+#toast-container.toast-bottom-center>div {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#toast-container.toast-top-full-width>div,
+#toast-container.toast-bottom-full-width>div {
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* .toast {
+  background-color: #030303;
+}
+
+.toast-success {
+  background-color: #51A351;
+}
+
+.toast-error {
+  background-color: #BD362F;
+}
+
+.toast-info {
+  background-color: #2F96B4;
+}
+
+.toast-warning {
+  background-color: #F89406;
+} */
+.toast {
+  background-color: #030303;
+}
+
+.toast-success {
+  background-color: #51A351;
+}
+
+.toast-error {
+  background-color: rgba(255, 17, 0, .8);
+}
+
+.toast-info {
+  background-color: rgba(26, 102, 255, .8);
+}
+
+.toast-warning {
+  background-color: rgba(255, 160, 24, .8);
+}
+
+.toast-progress {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  background-color: #000000;
+  opacity: 0.4;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  filter: alpha(opacity=40);
+}
+
+/*Responsive Design*/
+@media all and (max-width: 240px) {
+  #toast-container>div {
+      padding: 8px 8px 8px 50px;
+      width: 11em;
+  }
+
+  #toast-container>div.rtl {
+      padding: 8px 50px 8px 8px;
+  }
+
+  #toast-container .toast-close-button {
+      right: -0.2em;
+      top: -0.2em;
+  }
+
+  #toast-container .rtl .toast-close-button {
+      left: -0.2em;
+      right: 0.2em;
+  }
+}
+
+@media all and (min-width: 241px) and (max-width: 480px) {
+  #toast-container>div {
+      padding: 8px 8px 8px 50px;
+      width: 18em;
+  }
+
+  #toast-container>div.rtl {
+      padding: 8px 50px 8px 8px;
+  }
+
+  #toast-container .toast-close-button {
+      right: -0.2em;
+      top: -0.2em;
+  }
+
+  #toast-container .rtl .toast-close-button {
+      left: -0.2em;
+      right: 0.2em;
+  }
+}
+
+@media all and (min-width: 481px) and (max-width: 768px) {
+  #toast-container>div {
+      padding: 15px 15px 15px 50px;
+      width: 25em;
+  }
+
+  #toast-container>div.rtl {
+      padding: 15px 50px 15px 15px;
+  }
+}
+
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  margin-top: 4px;
+}
+
+input#title:hover,
+input#title:active,
+input#title:focus,
+textarea#message:hover,
+textarea#message:active,
+textarea#message:focus,
+#showEasing:hover,
+#showEasing:active,
+#showEasing:focus,
+#hideEasing:hover,
+#hideEasing:active,
+#hideEasing:focus,
+#showMethod:hover,
+#showMethod:active,
+#showMethod:focus,
+#hideMethod:hover,
+#hideMethod:active,
+#hideMethod:focus,
+#showDuration:hover,
+#showDuration:active,
+#showDuration:focus,
+#hideDuration:hover,
+#hideDuration:active,
+#hideDuration:focus,
+#timeOut:hover,
+#timeOut:active,
+#timeOut:focus,
+#extendedTimeOut:hover,
+#extendedTimeOut:active,
+#extendedTimeOut:focus {
+  border-width: 1px;
+  border-style: solid;
+}
+
+#title,
+#showEasing,
+#hideEasing,
+#showMethod,
+#hideMethod,
+#showDuration,
+#hideDuration,
+#timeOut,
+#extendedTimeOut {
+  height: 45px;
+  width: 100%;
+}
+
+textarea#message {
+  width: 100%;
+  padding-top: 12px;
+}
+
+.checkbox input[type="checkbox"]:hover {
+  border-color: #ffd500;
+}
+
+#toastTypeGroup,
+#positionGroup {
+  padding-left: 10%;
+}
+
+.quantity {
+  position: relative;
+  padding-bottom: 45px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=text] {
+  -moz-appearance: textfield;
+}
+
+.quantity input {
+  width: 45px;
+  height: 42px;
+  line-height: 1.65;
+  float: left;
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #eee;
+}
+
+.quantity input:focus {
+  outline: 0;
+}
+
+.quantity-nav {
+  float: left;
+  position: relative;
+  height: 42px;
+}
+
+.quantity-button {
+  position: relative;
+  cursor: pointer;
+  border-left: 1px solid #eee;
+  width: 20px;
+  text-align: center;
+  color: #333;
+  font-size: 13px;
+  line-height: 1.7;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.quantity-button.quantity-up {
+  position: absolute;
+  height: 50%;
+  top: 0;
+  border-bottom: 1px solid #eee;
+}
+
+.quantity-button.quantity-down {
+  position: absolute;
+  bottom: -1px;
+  height: 50%;
+}
+
+.checkbox-custom,
+.radio-custom {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-custom,
+.checkbox-custom-label,
+.radio-custom,
+.radio-custom-label {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px 0px 5px 16px;
+  cursor: pointer;
+}
+
+.checkbox-custom-label,
+.radio-custom-label {
+  position: relative;
+}
+
+.checkbox-custom+.checkbox-custom-label:before,
+.radio-custom+.radio-custom-label:before {
+  content: '';
+  background: #fff;
+  border: 1px solid #ddd;
+  display: inline-block;
+  vertical-align: middle;
+  width: 15px;
+  height: 15px;
+  padding: 2px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.checkbox-custom+.checkbox-custom-label:before {
+  margin-top: -2px;
+}
+
+.radio-custom+.radio-custom-label:before {
+  margin-top: 0px;
+}
+
+.checkbox-custom:checked+.checkbox-custom-label:before {
+  box-shadow: inset 0px 0px 0px 4px #fff;
+}
+
+.radio-custom+.radio-custom-label:before {
+  border-radius: 50%;
+}
+
+.radio-custom:checked+.radio-custom-label:before {
+  box-shadow: inset 0px 0px 0px 4px #fff;
+}
+
+.checkbox-custom:focus+.checkbox-custom-label,
+.radio-custom:focus+.radio-custom-label {
+  /* outline: 1px solid #ddd;  focus style */
+}
+
+.notification-page {
+  padding: 5px 30px;
+}
+
+.button-toast {
+  margin-top: 25px;
+}
+
+.control-group {
+  margin-top: 5px;
+}

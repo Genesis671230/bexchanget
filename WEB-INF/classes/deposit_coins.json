@@ -1,0 +1,134 @@
+{
+  "BTC": {
+    "address_type": "BTC",
+    "symbol": "BTC",
+    "name": "Bitcoin",
+    "image": "../assets/img/cryptoicons/btc.svg"
+  },
+  "ETH": {
+    "address_type": "ETH",
+    "symbol": "ETH",
+    "name": "Ethereum ERC-20",
+    "image": "../assets/img/cryptoicons/eth.svg"
+  },
+  "TRON": {
+    "address_type": "TRX",
+    "symbol": "TRX",
+    "name": "Tron",
+    "image": "../assets/img/cryptoicons/trx.svg"
+  },
+  "USDT_ERC20": {
+    "address_type": "ETH",
+    "symbol": "USDT",
+    "name": "USDT ERC-20",
+    "image": "../assets/img/cryptoicons/usdt.svg"
+  },
+  "USDT_TRC20": {
+    "address_type": "TRX",
+    "symbol": "USDT",
+    "name": "USDT TRC-20",
+    "image": "../assets/img/cryptoicons/usdt.svg"
+  },
+  "SOL": {
+    "address_type": "SOL",
+    "symbol": "SOL",
+    "name": "SOL",
+    "image": "../assets/img/cryptoicons/sol.svg"
+  },
+  "LTC": {
+    "address_type": "LTC",
+    "symbol": "LTC",
+    "name": "Litecoin",
+    "image": "../assets/img/cryptoicons/ltc.svg"
+  },
+  "USDC_ERC20": {
+    "address_type": "ETH",
+    "symbol": "USDC",
+    "name": "USDC ERC-20",
+    "image": "../assets/img/cryptoicons/usdc.svg"
+  },
+  "USDC_BEP20": {
+    "address_type": "ETH",
+    "symbol": "USDC",
+    "name": "USDC BEP-20",
+    "image": "../assets/img/cryptoicons/usdc.svg"
+  },
+  "USDC_TRC20": {
+    "address_type": "TRX",
+    "symbol": "USDC",
+    "name": "USDC TRC-20",
+    "image": "../assets/img/cryptoicons/usdc.svg"
+  },
+  "BUSD": {
+    "address_type": "ETH",
+    "symbol": "BUSD",
+    "name": "BUSD BEP-20",
+    "image": "../assets/img/cryptoicons/busd.svg"
+  },
+  "BNB_BEP20": {
+    "address_type": "ETH",
+    "symbol": "BNB",
+    "name": "BNB BEP-20",
+    "image": "../assets/img/cryptoicons/bnb.svg"
+  },
+  "BNB_BEP2": {
+    "address_type": "BNB",
+    "symbol": "BNB",
+    "name": "BNB BEP-2",
+    "image": "../assets/img/cryptoicons/bnb.svg"
+  },
+  "DOGE": {
+    "address_type": "DOGE",
+    "symbol": "DOGE",
+    "name": "Dogecoin",
+    "image": "../assets/img/cryptoicons/doge.svg"
+  },
+  "BCH": {
+    "address_type": "BCH",
+    "symbol": "BCH",
+    "name": "Bitcoin Cash",
+    "image": "../assets/img/cryptoicons/bch.svg"
+  },
+  "SHIBA_INU_ERC20": {
+    "address_type": "ETH",
+    "symbol": "SHIB",
+    "name": "SHIBA INU ERC-20",
+    "image": "../assets/img/cryptoicons/shib.svg"
+  },
+  "SHIBA_INU_BEP20": {
+    "address_type": "ETH",
+    "symbol": "SHIB",
+    "name": "SHIBA INU BEP-20",
+    "image": "../assets/img/cryptoicons/shib.svg"
+  },
+  "SHIBA_INU_TRC20": {
+    "address_type": "TRX",
+    "symbol": "SHIB",
+    "name": "SHIBA INU TRC-20",
+    "image": "../assets/img/cryptoicons/shib.svg"
+  },
+  "CHAINLINK_ERC20": {
+    "address_type": "ETH",
+    "symbol": "LINK",
+    "name": "Chainlink ERC-20",
+    "image": "../assets/img/cryptoicons/link.svg"
+  },
+  "CHAINLINK_BEP20": {
+    "address_type": "ETH",
+    "symbol": "LINK",
+    "name": "Chainlink BEP-20",
+    "image": "../assets/img/cryptoicons/link.svg"
+  },
+  "CHAINLINK_TRC20": {
+    "address_type": "TRX",
+    "symbol": "LINK",
+    "name": "Chainlink TRC-20",
+    "image": "../assets/img/cryptoicons/link.svg"
+  },
+  "ETC": {
+    "address_type": "ETC",
+    "symbol": "ETC",
+    "name": "Ethereum Classic",
+    "image": "../assets/img/cryptoicons/etc.svg"
+  }
+}
